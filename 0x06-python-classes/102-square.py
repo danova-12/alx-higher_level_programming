@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# 102-square.py
 """Define a class Square."""
 
 
@@ -53,4 +53,3 @@ class Square:
     def __ge__(self, other):
         """Define the >= compmarison to a Square."""
         return self.area() >= other.area()
-
