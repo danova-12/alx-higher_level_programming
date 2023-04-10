@@ -1,13 +1,20 @@
 #!/usr/bin/python3
-"""implements the size attribute of the rectangle"""
+"""Module that holds the class Square
+"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """implements a square from a rectangle"""
+    """Class that inherits from Rectangle but makes a square
+    """
+
     def __init__(self, size):
-        """initialize size of square"""
+        """Initializes a square
+            Args:
+                size (int): size of the square
+        """
+
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
-
